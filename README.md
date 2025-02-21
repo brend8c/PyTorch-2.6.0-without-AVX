@@ -167,7 +167,8 @@ E:\PyTorch-2.6.0-without-AVX> `myenv\Scripts\activate`
 
 - После успешной сборки wheel‑файл появится в каталоге `PyTorch-2.6.0-without-AVX\pytorch\dist` (например, что-то вроде torch-2.6.0a0+git1eba9b3-cp310-cp310-win_amd64.whl).
 
-**Отменяем временные переменные:**  
+### **Отменяем временные переменные:**
+
 Достаточно удалить их из текущей сессии. Если вы работаете в Git Bash, выполните следующие команды:
 `unset HOME`
 `unset USE_AVX`
