@@ -86,30 +86,35 @@ print(torch.__config__.show())
    git clone https://github.com/brend8c/PyTorch-2.6.0-without-AVX.git
 ```
 
-**2. Выберите нужную версию Python для интерпретатора:** В VSCode нажмите `Ctrl+Shift+P` и пишем `Python: Select Interpreter`. Выберите Python 3.10.
+**2. Выберите нужную версию Python для интерпретатора:**  
+В VSCode нажмите `Ctrl+Shift+P` и пишем `Python: Select Interpreter`. Выберите Python 3.10.
 
-**3. Создайте виртуальное окружение:** "C:\Python310\python.exe" -m venv myenv
+**3. Создайте виртуальное окружение:**  
+"C:\Python310\python.exe" -m venv myenv
 
-**4. Активируйте виртуальное окружение:** source myenv/Scripts/activate
+**4. Активируйте виртуальное окружение:**  
+source myenv/Scripts/activate
 
-**5. Укажите интерпретатор Python в VSCode:** Нажмите `Ctrl+Shift+P` и пишем `Python: Select Interpreter`, затем выберите `.\myenv\Scripts\Python.exe`
+**5. Укажите интерпретатор Python в VSCode:**  
+Нажмите `Ctrl+Shift+P` и пишем `Python: Select Interpreter`, затем выберите `.\myenv\Scripts\Python.exe`
 
-**6. Обновите pip и установите зависимости:**
-`python -m pip install --upgrade pip`
-`pip install -r requirements.txt`
+**6. Обновите pip и установите зависимости:**  
+`python -m pip install --upgrade pip`  
+`pip install -r requirements.txt`  
 `pip install cmake setuptools wheel`
 
-**7. Клонируйте в корневой каталог проекта:** PyTorch-2.6.0-without-AVX\ `git clone --recursive --branch v2.6.0 https://github.com/pytorch/pytorch.git`
+**7. Клонируйте в корневой каталог проекта:**  
+PyTorch-2.6.0-without-AVX\ `git clone --recursive --branch v2.6.0 https://github.com/pytorch/pytorch.git`
 
 ### Установка системных зависимостей:
 
-**1. Скачайте Visual Studio 2022 Build Tools:**
+**1. Скачайте Visual Studio 2022 Build Tools:**  
 [Visual Studio 2022 Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 
-**2. Установите необходимые компоненты:**
+**2. Установите необходимые компоненты:**  
 Импортируйте настройки из файла `.vsconfig` или установите вручную требуемые компоненты.
 
-**3. Отключите AVX в CMake:**
+**3. Отключите AVX в CMake:**  
 Откройте файл `PyTorch-2.6.0-without-AVX\pytorch\CMakeLists.txt`
 
 Найдите следующий фрагмент кода:
@@ -129,23 +134,25 @@ if(MSVC)
 endif()
 ```
 
-**1. В Windows в строке поиска введите и откройте** `x64 Native Tools Command Prompt for VS 2022`
+**1. В Windows в строке поиска введите и откройте**  
+`x64 Native Tools Command Prompt for VS 2022`  
 Это командная строка, в которой настроена среда компиляции (VC++).
 
-**2. Перейдите в каталог с проектом:** `cd /d E:\PyTorch-2.6.0-without-AVX`
+**2. Перейдите в каталог с проектом:**  
+`cd /d E:\PyTorch-2.6.0-without-AVX`
 
-**3. Активируйте ваше виртуальное окружение Python 3.10:**
-**Введите команду из корневого каталога проекта (где находится папка myenv):**
+**3. Активируйте ваше виртуальное окружение Python 3.10:**  
+**Введите команду из корневого каталога проекта (где находится папка myenv):**  
 E:\PyTorch-2.6.0-without-AVX> `myenv\Scripts\activate`
 
-**4. Перейдите в каталог с исходным кодом PyTorch (там, где находится `setup.py`):**
+**4. Перейдите в каталог с исходным кодом PyTorch (там, где находится `setup.py`):**  
 `cd pytorch`
 
-**5. Установите переменные окружения для сборки без AVX и корректного пути HOME:**
+**5. Установите переменные окружения для сборки без AVX и корректного пути HOME:**  
 `set HOME=C:\Users\brend`
 `set USE_AVX=0`
 
-**6. Запустите сборку PyTorch:**
+**6. Запустите сборку PyTorch:**  
 `python setup.py install`
 
 - Обратите внимание, что компиляция может занять около 3 часов при полной загрузке CPU.
@@ -155,7 +162,7 @@ E:\PyTorch-2.6.0-without-AVX> `myenv\Scripts\activate`
 – После сборки в каталоге `PyTorch-2.6.0-without-AVX\` и `PyTorch-2.6.0-without-AVX\pytorch\` появится папка `build`.
 – Если что-то пошло не так и во время сборки вы получили ошибку, после устранения ошибки удалите папку `build` в `PyTorch-2.6.0-without-AVX\pytorch\build` и повторите попытку сборки.
 
-**7. Сборка wheel‑файла:** вводим и запускаем команду:
+**7. Сборка wheel‑файла:** вводим и запускаем команду:  
 (myenv) E:\PyTorch-2.6.0-without-AVX\pytorch> `python setup.py bdist_wheel`
 
 - После успешной сборки wheel‑файл появится в каталоге `PyTorch-2.6.0-without-AVX\pytorch\dist` (например, что-то вроде torch-2.6.0a0+git1eba9b3-cp310-cp310-win_amd64.whl).
@@ -183,7 +190,7 @@ print(torch.__config__.show())
 `CPU capability usage: NO AVX`
 что подтверждает сборку без поддержки AVX.
 
-**Отменяем временные переменные**
+**Отменяем временные переменные:**  
 Достаточно удалить их из текущей сессии. Если вы работаете в Git Bash, выполните следующие команды:
 `unset HOME`
 `unset USE_AVX`
