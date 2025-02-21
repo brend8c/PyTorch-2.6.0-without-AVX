@@ -3,25 +3,15 @@
 Этот релиз представляет собой сборку **PyTorch 2.6.0**, **без поддержки AVX**, для процессоров, не имеющих инструкций AVX/AVX2/AVX512.
 
 <table>
-  <tr>
-    <td>✅ <b>Версия:</b></td><td><code>2.6.0a0+git1eba9b3</code></td>
-    <td>✅ <b>Python:</b></td><td><code>3.10</code></td>
-  </tr>
-  <tr>
-    <td>✅ <b>ОС:</b></td><td><code>Windows 64-bit (win_amd64)</code></td>
-    <td>✅ <b>CPU:</b></td><td><code>SSE2 (без AVX, AVX2, AVX512)</code></td>
-  </tr>
-  <tr>
-    <td>✅ <b>CUDA:</b></td><td>🟥 Нет</td>
-    <td>✅ <b>OpenMP:</b></td><td>✅ Включен</td>
-  </tr>
-  <tr>
-    <td>✅ <b>MKLDNN:</b></td><td>✅ Включен</td>
-    <td>✅ <b>Компилятор:</b></td><td><code>MSVC 19.43.34808.0</code></td>
-  </tr>
-  <tr>
-    <td>✅ <b>C++ Стандарт:</b></td><td><code>C++17</code></td>
-  </tr>
+  <tr><td>✅ <b>Версия:</b> <code>2.6.0a0+git1eba9b3</code></td></tr>
+  <tr><td>✅ <b>Python:</b> <code>3.10</code></td></tr>
+  <tr><td>✅ <b>Операционная система:</b> <code>Windows 64-bit (win_amd64)</code></td></tr>
+  <tr><td>✅ <b>CPU:</b> <code>SSE2 (без AVX, AVX2, AVX512)</code></td></tr>
+  <tr><td>✅ <b>CUDA:</b> 🟥 Нет</td></tr>
+  <tr><td>✅ <b>OpenMP:</b> ✅ Включен</td></tr>
+  <tr><td>✅ <b>MKLDNN:</b> ✅ Включен</td></tr>
+  <tr><td>✅ <b>Компилятор:</b> <code>MSVC 19.43.34808.0</code></td></tr>
+  <tr><td>✅ <b>C++ Стандарт:</b> <code>C++17</code></td></tr>
 </table>
 
 ### 🔧 Полная информация о сборке:
