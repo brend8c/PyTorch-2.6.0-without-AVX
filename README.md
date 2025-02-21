@@ -1,6 +1,7 @@
 <p align="center">
   <img src="readme_md/PyTorch_2.6.0_no_AVX.webp" alt="Alt Text" width="80%">
 </p>
+
 # PyTorch 2.6.0 (Без AVX) для Windows
 
 Этот релиз представляет собой сборку **PyTorch 2.6.0**, **без поддержки AVX**, для процессоров, не имеющих инструкций AVX/AVX2/AVX512.
