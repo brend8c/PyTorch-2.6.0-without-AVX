@@ -131,15 +131,20 @@ endif()
 
 **1. В Windows в строке поиска введите и откройте** `x64 Native Tools Command Prompt for VS 2022`
 Это командная строка, в которой настроена среда компиляции (VC++).
+
 **2. Перейдите в каталог с проектом:** `cd /d E:\PyTorch-2.6.0-without-AVX`
+
 **3. Активируйте ваше виртуальное окружение Python 3.10:**
 **Введите команду из корневого каталога проекта (где находится папка myenv):**
 E:\PyTorch-2.6.0-without-AVX> `myenv\Scripts\activate`
+
 **4. Перейдите в каталог с исходным кодом PyTorch (там, где находится `setup.py`):**
 `cd pytorch`
+
 **5. Установите переменные окружения для сборки без AVX и корректного пути HOME:**
 `set HOME=C:\Users\brend`
 `set USE_AVX=0`
+
 **6. Запустите сборку PyTorch:**
 `python setup.py install`
 
