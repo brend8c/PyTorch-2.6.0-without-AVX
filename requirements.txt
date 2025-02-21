@@ -1,0 +1,12 @@
+# requirements.txt – зависимости для сборки PyTorch
+numpy
+ninja
+pyyaml
+mkl
+mkl-include
+typing_extensions
+packaging
+requests
+tqdm
+sympy
+filelock
