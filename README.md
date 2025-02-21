@@ -86,10 +86,10 @@ print(torch.__config__.show())
    git clone https://github.com/brend8c/PyTorch-2.6.0-without-AVX.git
 ```
 
-**2. Выберите нужную версию Python для интерпретатора:** В VSCode нажмите `Ctrl+Shift+P` и пишем `Python: Select Interpreter`. Выберите Python 3.10.
-**3. Создайте виртуальное окружение:** "C:\Python310\python.exe" -m venv myenv
-**4. Активируйте виртуальное окружение:** source myenv/Scripts/activate
-**5. Укажите интерпретатор Python в VSCode:** Нажмите `Ctrl+Shift+P` и пишем `Python: Select Interpreter`, затем выберите `.\myenv\Scripts\Python.exe`
+**2. Выберите нужную версию Python для интерпретатора:** В VSCode нажмите `Ctrl+Shift+P` и пишем `Python: Select Interpreter`. Выберите Python 3.10. &nbsp;
+**3. Создайте виртуальное окружение:** "C:\Python310\python.exe" -m venv myenv &nbsp;
+**4. Активируйте виртуальное окружение:** source myenv/Scripts/activate &nbsp;
+**5. Укажите интерпретатор Python в VSCode:** Нажмите `Ctrl+Shift+P` и пишем `Python: Select Interpreter`, затем выберите `.\myenv\Scripts\Python.exe` &nbsp;
 **6. Обновите pip и установите зависимости:**
 `python -m pip install --upgrade pip`
 `pip install -r requirements.txt`
