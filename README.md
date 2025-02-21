@@ -49,7 +49,6 @@ print("========================================")
 print("Полная информация о сборке:")
 print(torch.__config__.show())
 print("========================================")
-print("PyTorch version:", torch.__version__)
 # Тест создания и вывода тензора
 x = torch.rand(5, 5)
 print("Tensor:\n", x)
@@ -195,9 +194,19 @@ E:\PyTorch-2.6.0-without-AVX> `myenv\Scripts\activate`
 
 ```python
 import torch
+
 print("Версия PyTorch:", torch.__version__)
+print("========================================")
 print("Полная информация о сборке:")
 print(torch.__config__.show())
+print("========================================")
+# Тест создания и вывода тензора
+x = torch.rand(5, 5)
+print("Tensor:\n", x)
+
+# Тест базовой операции
+y = x + 1
+print("Tensor + 1:\n", y)
 ```
 
 Запустите: `python main.py`
