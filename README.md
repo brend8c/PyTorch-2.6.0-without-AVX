@@ -75,7 +75,7 @@ print(torch.__config__.show())
 
 ### Требования
 
-**requirements.txt** – зависимости для сборки PyTorch:
+**requirements.txt** – зависимости для сборки PyTorch:  
 `numpy ninja pyyaml mkl mkl-include typing_extensions packaging requests tqdm sympy filelock`
 
 ### Подготовка окружения (для VSCode с терминалом bash)
@@ -90,10 +90,10 @@ print(torch.__config__.show())
 В VSCode нажмите `Ctrl+Shift+P` и пишем `Python: Select Interpreter`. Выберите Python 3.10.
 
 **3. Создайте виртуальное окружение:**  
-"C:\Python310\python.exe" -m venv myenv
+`"C:\Python310\python.exe" -m venv myenv`
 
 **4. Активируйте виртуальное окружение:**  
-source myenv/Scripts/activate
+`source myenv/Scripts/activate`
 
 **5. Укажите интерпретатор Python в VSCode:**  
 Нажмите `Ctrl+Shift+P` и пишем `Python: Select Interpreter`, затем выберите `.\myenv\Scripts\Python.exe`
@@ -155,7 +155,7 @@ E:\PyTorch-2.6.0-without-AVX> `myenv\Scripts\activate`
 **6. Запустите сборку PyTorch:**  
 `python setup.py install`
 
-- Обратите внимание, что компиляция может занять около 3 часов при полной загрузке CPU.
+- Обратите внимание, что компиляция может занять около 3 часов с полной загрузкой CPU.
 - Если всё прошло успешно и нет логов об ошибках, можем собрать wheel‑файл.
 - Wheel — это стандартный бинарный дистрибутив для Python, который содержит скомпилированный код и метаданные. Он предназначен для быстрой и удобной установки пакетов через pip.
 
